@@ -34,7 +34,7 @@ namespace AuthenticationService.Controller {
             Description = "Creates a new user account and returns authentication token"
         )]
         [SwaggerResponse(200, "User registered successfully", typeof(AuthResponse))]
-        [SwaggerResponse(400, "Bad request - validation failed or user exists test")]
+        [SwaggerResponse(400, "Bad request - validation failed or dd user exists test")]
         [SwaggerResponse(500, "Internal server error")]
         public async Task<ActionResult<AuthResponse>> Register([FromBody] RegisterDTO request) {
             try
